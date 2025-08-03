@@ -4,7 +4,8 @@ Raspberry pi OS + Hailo 8L + AI inference
 Raspberry pi OS : debian bookworm           
 Raspberry Pi version : Raspberry pi 5              
 Hailo NPU version : Hailo 8L            
-Hailo-all version :4.20.0  
+Hailort version :4.22.0            
+Python version : 3.11
 
 ------
 # References
