@@ -11,4 +11,5 @@ Python version : 3.11
 # References
 https://github.com/hailo-ai/hailort       
 https://github.com/hailo-ai/Hailo-Application-Code-Examples        
-https://github.com/hailo-ai/tappas
+https://github.com/hailo-ai/tappas     
+https://github.com/hailo-ai/hailo_model_zoo
