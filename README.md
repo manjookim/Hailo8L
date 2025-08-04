@@ -9,6 +9,10 @@ Python version : 3.11
 
 ------
 ```
+docker build -t my-hailo-tappas:final .
+```
+
+```
 docker run -it --name hailo8l   --device=/dev/hailo0   -v /home/rpi2/npu:/app/tappas/npu   my-hailo-tappas:final /bin/bash
 ```
 
