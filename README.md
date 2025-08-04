@@ -8,6 +8,11 @@ Hailort version :4.22.0
 Python version : 3.11
 
 ------
+```
+docker run -it --name hailo8l   --device=/dev/hailo0   -v /home/rpi2/npu:/app/tappas/npu   my-hailo-tappas:final /bin/bash
+```
+
+------
 ### References
 https://github.com/hailo-ai/hailort       
 https://github.com/hailo-ai/Hailo-Application-Code-Examples        
