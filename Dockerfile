@@ -28,13 +28,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x libzmq3-dev \
     libcairo2-dev x11-utils ffmpeg \
     dpkg-dev \
+    # GObject Introspection 파이썬 바인딩 추가
+    python3-gi \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
-
 # ----------------------------
 # 4. HailoRT 4.22.0 C++ 라이브러리 및 Python 모듈(.whl) 설치
 # ----------------------------
-# Dockerfile과 같은 경로에 'hailort_4.22.0_arm64.deb'와
-# 'hailort-4.22.0-cp311-cp311-linux_aarch64.whl' 파일이 있어야 합니다.
+# 이 파일들을 Dockerfile과 같은 경로에 두어야 합니다.
+# (hailort_4.22.0_arm64.deb 및 hailort-4.22.0-cp311-cp311-linux_aarch64.whl)
 COPY hailort_4.22.0_arm64.deb .
 COPY hailort-4.22.0-cp311-cp311-linux_aarch64.whl .
 
@@ -54,13 +55,22 @@ RUN pip3 install --break-system-packages hailort-4.22.0-cp311-cp311-linux_aarch6
 RUN pip3 install --no-cache-dir --break-system-packages numpy pyyaml opencv-python-headless onnx matplotlib
 
 # ----------------------------
-# 6. 환경 변수 설정
+# 6. Tappas Git 레포지토리 클론 및 설치
+# ----------------------------
+WORKDIR /app
+RUN git clone https://github.com/hailo-ai/tappas.git
+
+WORKDIR /app/tappas
+RUN pip3 install --no-cache-dir --break-system-packages -r /app/tappas/tools/run_app/requirements_24_04.txt
+
+# ----------------------------
+# 7. 환경 변수 설정
 # ----------------------------
 ENV PATH="${PATH}:/usr/bin/hailo"
 ENV LD_LIBRARY_PATH="/usr/lib"
 
 # ----------------------------
-# 7. 컨테이너 실행 시 작업 디렉토리 설정 및 쉘 실행
+# 8. 컨테이너 실행 시 작업 디렉토리 설정 및 쉘 실행
 # ----------------------------
-WORKDIR /root
+WORKDIR /app/tappas
 CMD ["bash"]
