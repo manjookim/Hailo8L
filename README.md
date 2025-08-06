@@ -23,4 +23,5 @@ docker run -it --name hailo8l   --device=/dev/hailo0   -v /home/rpi2/npu:/app/ta
 https://github.com/hailo-ai/hailort       
 https://github.com/hailo-ai/Hailo-Application-Code-Examples        
 https://github.com/hailo-ai/tappas     
-https://github.com/hailo-ai/hailo_model_zoo
+https://github.com/hailo-ai/hailo_model_zoo    
+https://hailo.ai/developer-zone/documentation/
