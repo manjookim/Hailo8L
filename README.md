@@ -8,10 +8,12 @@ PcIe & Hailort version : 4.22.0
 Python version : 3.11
 
 ------
+도커파일 빌드    
 ```
 docker build -t my-hailo-tappas:final .
 ```
 
+hailo8l 이라는 이름의 컨테이너 생성     
 ```
 docker run -it --name hailo8l   --device=/dev/hailo0   -v /home/rpi2/npu:/app/tappas/npu   my-hailo-tappas:final /bin/bash
 ```
