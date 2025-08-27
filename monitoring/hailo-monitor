@@ -1,0 +1,9 @@
+/home/rpi2/npu/logs/monitor-*.log {
+    daily
+    rotate 7
+    missingok
+    notifempty
+    compress
+    delaycompress
+    su rpi2 rpi2
+}
