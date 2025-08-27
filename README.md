@@ -20,19 +20,7 @@ Python version : 3.11
 3. monitoring
 
 
-도커파일 빌드    
-```
-docker build -t my-hailo-tappas:final .
-```
 
-HAILO8L 이라는 이름의 컨테이너 생성     
-```
-docker run -it --privileged --device=/dev/hailo0 --ipc=host -v /tmp:/tmp \
--v /home/rpi2/npu:/app/tappas/npu \
--e HAILO_MONITOR=1 \
---name HAILO8L \
-my-hailo-tappas:final
-```
 
 ------
 ### References
