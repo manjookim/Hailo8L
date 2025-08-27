@@ -28,7 +28,7 @@ https://hailo.ai/
 ------
 
 1. HEf file     
-   See  https://github.com/manjookim/Hailo8L/tree/main/Model_compilation/README.md for more details
+   See  [Model_Compilation](https://github.com/manjookim/Hailo8L/tree/main/Model_compilation/README.md) for more details
 3. Inference                   
 4. monitoring                    
 
