@@ -8,6 +8,12 @@ PcIe & Hailort version : 4.22.0
 Python version : 3.11
 
 ------
+
+1. NPU란
+2. HAILO란
+3. HAILO에 사용되는 프레임워크
+
+
 도커파일 빌드    
 ```
 docker build -t my-hailo-tappas:final .
