@@ -13,9 +13,13 @@ Python version : 3.11
 docker build -t my-hailo-tappas:final .
 ```
 
-hailo8l 이라는 이름의 컨테이너 생성     
+HAILO8L 이라는 이름의 컨테이너 생성     
 ```
-docker run -it --name hailo8l   --device=/dev/hailo0   -v /home/rpi2/npu:/app/tappas/npu   my-hailo-tappas:final /bin/bash
+docker run -it --privileged --device=/dev/hailo0 --ipc=host -v /tmp:/tmp \
+-v /home/rpi2/npu:/app/tappas/npu \
+-e HAILO_MONITOR=1 \
+--name HAILO8L \
+my-hailo-tappas:final
 ```
 
 ------
