@@ -17,11 +17,11 @@ Python version : 3.11
 https://hailo.ai/     
 
 #### 3. HAILO에 사용되는 프레임워크        
-Hailort      
-Hailort python binding        
-tappas       
-hailo model zoo       
-hailo ai sw suite        
++ Hailort      
++ Hailort python binding        
++ tappas       
++ hailo model zoo       
++ hailo ai sw suite        
 
 #### 4. 호스트/rpi 나눠서 한 이유            
 
