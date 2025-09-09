@@ -1,4 +1,4 @@
 -----------------
 
 ### References      
-[ultralytics] (https://github.com/ultralytics/ultralytics)
+[ultralytics](https://github.com/ultralytics/ultralytics)
