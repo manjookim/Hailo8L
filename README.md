@@ -23,8 +23,9 @@ https://hailo.ai/
 + hailo model zoo       
 + hailo ai sw suite        
 
-####  호스트/rpi 나눠서 한 이유   
-
+####  호스트(PC)/rpi 나눠서 한 이유   
+raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 호환되지 않음 -> 
+컴파일은 호스트에서, 추론은 rpi의 커스텀 도커 컨테이너에서 실행  
 
 ------
 ### 1. PC 환경설정
@@ -64,8 +65,35 @@ pip install -e .
 
 
 ### 2. Rpi 환경설정
-1. Dockerfile 작성
-2. 
+1. Dockerfile 작성 및 저장
+```
+vi Dockerfile
+```
+
+2. 도커 컨테이너 생성
+```
+sudo docker build -t hailo_docker:test .
+#docker image:version
+```
+```
+sudo docker run -it \
+  --privileged \
+  --ipc=host \
+  -v /dev:/dev \
+  -v /lib/modules:/lib/modules:ro \
+  -v /usr/src:/usr/src:ro \
+  -v /dev/bus/pci:/dev/bus/pci \
+  -v /home/rpi2/Hailo-Application-Code-Examples:/app/tappas/Hailo-Application-Code-Examples \ #-v 마운트하고싶은 로컬 디렉토리 경로:마운트할 도커 디렉토리 경로
+  -v /home/rpi2/hailo_model_zoo:/app/tappas/hailo_model_zoo \
+  -v /home/rpi2/npu:/app/tappas/npu \
+  --name hailo_test hailo_docker:test /bin/bash #docker name : hailo_test (사용자 임의 변경)
+```
+
+3. 도커 컨테이너 진입
+```
+docker start hailo_test
+docker exec -it hailo_test /bin/bash
+```
 
 ------
 
