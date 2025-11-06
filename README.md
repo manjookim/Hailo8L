@@ -113,3 +113,4 @@ https://github.com/hailo-ai/Hailo-Application-Code-Examples
 https://github.com/hailo-ai/tappas     
 https://github.com/hailo-ai/hailo_model_zoo    
 https://hailo.ai/developer-zone/documentation/
+https://docs.ultralytics.com/ko/models/yolov8/
