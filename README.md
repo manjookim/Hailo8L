@@ -97,9 +97,12 @@ docker exec -it hailo_test /bin/bash
 
 1. .HEf 컴파일     
    See  [Compile](https://github.com/manjookim/Hailo8L/tree/main/compile/README.md) for more details
-2. Inference                   
+2. Inference
+    See  [inference](https://github.com/manjookim/Hailo8L/tree/main/Inference/README.md) for more details                   
 3. monitoring
-4. accuracy                
+    See  [Compile](https://github.com/manjookim/Hailo8L/tree/main/compile/README.md) for more details
+4. accuracy
+   See  [accuracy](https://github.com/manjookim/Hailo8L/tree/main/accuracy/README.md) for more details               
 
 
 
