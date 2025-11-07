@@ -23,8 +23,8 @@ https://hailo.ai/
 + hailo model zoo       
 + hailo ai sw suite        
 
-####  호스트(PC)/rpi 나눠서 한 이유   
-raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 호환되지 않음 -> 
+####  호스트(PC)/rpi 둘 다 사용 한 이유   
+raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 호환되지 않음 ->      
 컴파일은 호스트에서, 추론은 rpi의 커스텀 도커 컨테이너에서 실행  
 
 ------
