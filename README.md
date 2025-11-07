@@ -30,7 +30,7 @@ raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 
 ------
 ### 1. PC 환경설정
 
-1. [Hailo.ai](https://hailo.ai/developer-zone/software-downloads/?product=ai_accelerators&device=hailo_8_8l) 회원가입 및 hailo ai sw suite 설치
+1. [Hailo.ai](https://hailo.ai/developer-zone/software-downloads/?product=ai_accelerators&device=hailo_8_8l) 회원가입 및 hailo ai sw suite 설치     
 hailo.ai > developer zone > software downloads > hailo_ai_sw_suite_2025-10.run 다운로드
 ```
 sudo apt update
