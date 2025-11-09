@@ -50,6 +50,11 @@ hailomz compile --ckpt /home/mjss/Downloads/yolo_new/yolov8n.onnx \ # 컴파일�
 
 ### 3. Degirum 활용 
 3-1. [Degirum](https://hub.degirum.com/compiler) 회원가입 및 compiler 선택     
-3-2. 컴파일할 모델의 pt 파일, name, version, imgsz, runtime:hailort, device:hailo8l, advanced options:calib-data(학습 데이터) 입력 후 compile     
+3-2. Compile 
+- 컴파일할 모델의 pt 파일
+- name, version, imgsz
+- runtime : hailort
+- device : hailo8l
+- advanced options : calib-data(학습 데이터 업로드)     
 <img width="962" height="1300" alt="image" src="https://github.com/user-attachments/assets/c2a6c673-a47b-4d98-b941-a54cce7a63a9" />
 
