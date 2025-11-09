@@ -6,33 +6,36 @@
 
 ### 1. Hailo SDK 활용
 
-onnx 파일 생성 
+1-1. onnx 파일 생성 
 ```
 yolo export model=yolov8n-seg.pt format=onnx imgsz=320
 ```
-Parsing 
+1-2. Parsing 
 ```   
 hailo parser onnx /home/mjss/Downloads/yolo_new/yolov8n-seg.onnx \       
 #	--start-node-names images \           
 #	--end-node-names output0 output1 \          
 	--hw-arch hailo8l
 ```
-Optimization
+1-3. Optimization
 ```
 hailo optimize yolov8n-seg.har --calib-set-path /home/mjss/Downloads/yolo_new/calib_data.npy
 ```
-Compile 
+1-4. Compile 
 ```
 hailo compiler yolov8n-seg_optimized.har --hw-arch hailo8l            
 ```
 
 
 ### 2. Hailo model zoo 활용
-onnx 파일 생성   
+2-1. onnx 파일 생성   
 ```
 yolo export model=yolov8n-seg.pt format=onnx imgsz=320
 ```
-Compile 
+2-2. 모델 컴파일 정보가 담긴 yaml, alls 파일 작성 (필요에 따라 다름)
+[https://github.com/hailo-ai/hailo_model_zoo/tree/master/hailo_model_zoo/cfg](https://github.com/hailo-ai/hailo_model_zoo/tree/master/hailo_model_zoo/cfg) 참고하여 필요한 파일들 수정 및 사용 
+
+2-3. Compile 
 ```
 hailomz compile --ckpt /home/mjss/Downloads/yolo_new/yolov8n.onnx \ # 컴파일하고 싶은 모델의 onnx 경로
  --calib-path /home/mjss/Downloads/yolo_new/expanded_coco_images \  # 해당 모델의 학습데이터 경로
