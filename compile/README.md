@@ -32,7 +32,7 @@ hailo compiler yolov8n-seg_optimized.har --hw-arch hailo8l
 ```
 yolo export model=yolov8n-seg.pt format=onnx imgsz=320
 ```
-2-2. 모델 컴파일 정보가 담긴 yaml, alls 파일 작성 (필요에 따라 다름)
+2-2. 모델 컴파일 정보가 담긴 yaml, alls 파일 작성 (필요에 따라 다름)        
 [https://github.com/hailo-ai/hailo_model_zoo/tree/master/hailo_model_zoo/cfg](https://github.com/hailo-ai/hailo_model_zoo/tree/master/hailo_model_zoo/cfg) 참고하여 필요한 파일들 수정 및 사용 
 
 2-3. Compile 
