@@ -2,7 +2,9 @@
 
 ## Hef 파일 생성 
 - 모델 컴파일은 hailo_ai_sw_suite (Hailo SDK)가 설치된 PC(Host) 에서 수행     
-- Hailo SDK / Hailomz / Degirum 세 가지 방법 중 골라서 사용           
+- Hailo SDK / Hailomz / Degirum 세 가지 방법 중 골라서 사용
+
+<br>
 
 ### 1. Hailo SDK 활용
 
