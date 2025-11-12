@@ -5,6 +5,7 @@ Raspberry pi OS : debian bookworm
 Raspberry Pi version : Raspberry pi 5              
 Hailo NPU version : Hailo-8L     
 Dataflow Compiler version : v3.32.0    
+Hailo Model Zoo version : v2.15    
 PcIe & Hailort version : 4.22.0            
 Python version : 3.11
 
