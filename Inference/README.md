@@ -17,9 +17,7 @@ python3 cpu_infer.py
 ```
 python3 npu_infer.py
 ```
-
-
-benchmark 실행    
+3-3. benchmark 실행    
 ```
 python benchmark.py --hef ./640/yolov8n-det.hef --image-dir ./640/expanded_coco_images
 ```
