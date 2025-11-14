@@ -1,20 +1,19 @@
 ## DL Inference Workload
 
-컨테이너 진입
+1. 컨테이너 진입
 ```
 docker exec -it <container_name> /bin/bash
 ```
-가상환경 진입
+2. 가상환경 진입
 ```
 source <venv_name>/bin/activate
 ```
 
-CPU DL Inference    
+3-1. CPU DL Inference    
 ```
 python3 cpu_infer.py
 ```
-
-NPU DL Inference
+3-2. NPU DL Inference
 ```
 python3 npu_infer.py
 ```
