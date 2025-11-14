@@ -85,6 +85,7 @@ sudo docker run -it \
   -v /lib/modules:/lib/modules:ro \
   -v /usr/src:/usr/src:ro \
   -v /dev/bus/pci:/dev/bus/pci \
+  -e HAILO_MONITOR=1 \
   -v /home/rpi2/npu:/app/tappas/npu \#-v 마운트하고싶은 로컬 디렉토리 경로:마운트할 도커 디렉토리 경로
   --name hailo_test hailo_docker:test /bin/bash #docker name : hailo_test (사용자 임의 변경)
 ```
