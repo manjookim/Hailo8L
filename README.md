@@ -51,7 +51,6 @@ git clone https://github.com/hailo-ai/hailo_model_zoo
 3.  가상환경 생성 및 접속
 ```
 cd hailo_model_zoo
-sudo apt intsall python3.10-venv
 python3 -m venv hailo_custom_venv
 source hailo_custom_venv/bin/activate
 ```
