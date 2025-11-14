@@ -1,7 +1,7 @@
 ## Accuracy evaluation    
-degirum 이라는 툴 사용 
+Degirum 이라는 툴 사용     
 
-
+json 파일 만들기 
 
 -----------------
 
