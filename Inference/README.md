@@ -1,17 +1,12 @@
 ## DL Inference Workload
 
-도커파일 빌드    
+컨테이너 진입
 ```
-docker build -t my-hailo-tappas:final .
+docker exec -it <container_name> /bin/bash
 ```
-
-HAILO8L 이라는 이름의 컨테이너 생성     
+가상환경 진입
 ```
-docker run -it --privileged --device=/dev/hailo0 --ipc=host -v /tmp:/tmp \
--v /home/rpi2/npu:/app/tappas/npu \
--e HAILO_MONITOR=1 \
---name HAILO8L \
-my-hailo-tappas:final
+source <venv_name>/bin/activate
 ```
 
 CPU DL Inference    
