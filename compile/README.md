@@ -11,7 +11,8 @@
 1-1. onnx 파일 생성 
 ```
 yolo export model=yolov8n-seg.pt format=onnx
-#yolo export model=yolov8n-seg.pt format=onnx imgsz=320 #메모리 오류 날 시 , imgsz 줄여서 해결   
+#yolo export model=yolov8n-seg.pt format=onnx imgsz=320
+#메모리 오류 날 시 , imgsz 줄여서 해결   
 ```
 1-2. Parsing 
 ```   
