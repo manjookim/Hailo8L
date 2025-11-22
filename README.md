@@ -71,9 +71,9 @@ pip install -e .
 - hailort_4.22.0_arm64.deb
 - hailort-4.22.0-cp311-cp311-linux_aarch64.whl
   
-2. pcie 적용
+2. pcie 드라이버 설치
 ```
-sudo dpkg -i hailort-pcie-driver_4.22.0_all.deb #hailort 설치
+sudo dpkg -i hailort-pcie-driver_4.22.0_all.deb 
 sudo reboot
 ```
 
