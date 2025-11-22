@@ -69,7 +69,7 @@ pip install -e .
 1. 필요한 소프트웨어 다운로드 [Hailo.ai](https://hailo.ai/developer-zone/software-downloads/?product=ai_accelerators&device=hailo_8_8l)
 - hailort-pcie-driver_4.22.0_all.deb
 - hailort_4.22.0_arm64.deb
-- hailort-4.22.0-cp311-cp311-linux_aarch64.whl
+- hailort-4.22.0-cp311-cp311-linux_aarch64.whl    
 이 세 가지의 버전은 모두 같아야 함 
   
 2. pcie 드라이버 설치
