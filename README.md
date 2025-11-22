@@ -66,12 +66,23 @@ pip install -e .
 <br>
 
 ### 2. Rpi 환경설정
-1. [Dockerfile](https://github.com/manjookim/Hailo8L/blob/main/Dockerfile) 작성 및 저장        
+1. 필요한 소프트웨어 다운로드 [Hailo.ai](https://hailo.ai/developer-zone/software-downloads/?product=ai_accelerators&device=hailo_8_8l)
+- hailort-pcie-driver_4.22.0_all.deb
+- hailort_4.22.0_arm64.deb
+- hailort-4.22.0-cp311-cp311-linux_aarch64.whl
+  
+2. pcie 적용
+```
+sudo dpkg -i hailort-pcie-driver_4.22.0_all.deb #hailort 설치
+sudo reboot
+```
+
+3. [Dockerfile](https://github.com/manjookim/Hailo8L/blob/main/Dockerfile) 작성 및 저장        
 ```
 vi Dockerfile
 ```
 
-2. 도커 컨테이너 생성
+4. 도커 컨테이너 생성
 ```
 sudo docker build -t hailo_docker:test .
 #docker image:version
@@ -89,7 +100,7 @@ sudo docker run -it \
   --name hailo_test hailo_docker:test /bin/bash #docker name : hailo_test (사용자 임의 변경)
 ```
 
-3. 도커 컨테이너 진입
+5. 도커 컨테이너 진입
 ```
 docker start hailo_test
 docker exec -it hailo_test /bin/bash
