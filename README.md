@@ -29,48 +29,7 @@ https://hailo.ai/
 raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 호환되지 않음 ->      
 컴파일은 호스트에서, 추론은 rpi의 커스텀 도커 컨테이너에서 실행  
 
-------
-### 1. PC 환경설정
-
-1. [Hailo.ai](https://hailo.ai/developer-zone/software-downloads/?product=ai_accelerators&device=hailo_8_8l) 회원가입 및 hailo ai sw suite 설치     
-hailo.ai > developer zone > software downloads > hailo_ai_sw_suite_2025-10.run 다운로드
-```
-sudo apt update
-sudo apt install -y python3-tk graphviz libgraphviz-dev python3.10-dev build-essential cmake libusb-1.0-0-dev
-sudo apt install -y python3-pip
-python3 -m pip install virtualenv
-sudo apt install -y nodejs npm
-./hailo8_ai_sw_suite_2025-07.run
-```
-
-2. hailo model zoo 깃허브 클론
-```
-git clone https://github.com/hailo-ai/hailo_model_zoo
-```
-
-3.  가상환경 생성 및 접속
-```
-cd hailo_model_zoo
-python3 -m venv hailo_custom_venv
-source hailo_custom_venv/bin/activate
-```
-
-4. dataflow compiler , hailort 설치
-```
-pip install /home/mjss/Downloads/hailo_ai_sw_suite/artifacts/hailo_dataflow_compiler-3.32.0-py3-none-linux_x86_64.whl
-pip install /home/mjss/Downloads/hailo_ai_sw_suite/artifacts/hailort-4.22.0-cp310-cp310-linux_x86_64.whl
-pip install -e .
-```
-
-
-<br>
-
-### 2. Rpi 환경설정
-1. 필요한 소프트웨어 다운로드 [Hailo.ai](https://hailo.ai/developer-zone/software-downloads/?product=ai_accelerators&device=hailo_8_8l)
-- hailort-pcie-driver_4.22.0_all.deb
-- hailort_4.22.0_arm64.deb
-- hailort-4.22.0-cp311-cp311-linux_aarch64.whl    
-이 세 가지의 버전은 모두 같아야 함 
+--어의 버전은 모두 같아야 함 
   
 2. pcie 드라이버 설치
 ```
