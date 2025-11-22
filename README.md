@@ -70,6 +70,7 @@ pip install -e .
 - hailort-pcie-driver_4.22.0_all.deb
 - hailort_4.22.0_arm64.deb
 - hailort-4.22.0-cp311-cp311-linux_aarch64.whl
+이 세 가지의 버전은 모두 같아야 함 
   
 2. pcie 드라이버 설치
 ```
