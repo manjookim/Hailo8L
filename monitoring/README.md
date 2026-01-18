@@ -27,7 +27,7 @@ mv scheduler_mon_pb2.py /app/tappas/npu/
   # 2. NPU 작업 실행
   python3 npu-det.py
   또는 #hailortcli run yolov8n-det.hef 
-```
+  ```
 - 터미널 2 (측정)
 ```
 python3 hailo_utilization.py 
