@@ -19,7 +19,7 @@ protoc --python_out=. scheduler_mon.proto
 mv scheduler_mon_pb2.py /app/tappas/npu/
 ```
 
-3. npu 사용량 측정
+### npu/cpu/mem 사용량 측정
 - 터미널 1 (추론)
   ```
   # 1. 환경 변수 설정
