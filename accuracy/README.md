@@ -1,7 +1,7 @@
 ## Accuracy evaluation    
-Degirum 이라는 툴 사용     
+[방법 1] Degirum 툴 사용     
 
-json 파일 만들기 
+[방법 2]  COCOeval 파이썬 코드 사용  
 
 -----------------
 
