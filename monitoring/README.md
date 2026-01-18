@@ -29,8 +29,6 @@ mv scheduler_mon_pb2.py /app/tappas/npu/
   또는 #hailortcli run yolov8n-det.hef 
   ```
 - 터미널 2 (측정)
-```
-python3 hailo_utilization.py 
-#옵션 필요할 때 사용 
-#--update_period 0.1
-```
+  ```
+  python3 hailo_utilization.py 
+  ```
