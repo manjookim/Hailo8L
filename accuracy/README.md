@@ -1,8 +1,8 @@
 ## Accuracy evaluation    
 [방법 1] Degirum 툴 사용     
-[degirum](https://github.com/manjookim/Hailo8L/tree/main/accuracy/degirum)
+[degirum](https://github.com/manjookim/Hailo8L/tree/main/accuracy/degirum)       
 [방법 2]  COCOeval 파이썬 코드 사용    
-[python](https://github.com/manjookim/Hailo8L/tree/main/accuracy/python)
+[python](https://github.com/manjookim/Hailo8L/tree/main/accuracy/python)       
 
 -----------------
 
