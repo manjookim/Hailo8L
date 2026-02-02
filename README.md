@@ -30,23 +30,19 @@ raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 
 컴파일은 호스트에서, 추론은 rpi의 커스텀 도커 컨테이너에서 실행  
 
 드라이버의 버전은 모두 같아야 함   
-1. hailort 드라이버 설치
-```
-sudo dpkg -i hailort_4.22.0_arm64.deb
-```
   
-2. pcie 드라이버 설치
+1. pcie 드라이버 설치
 ```
 sudo dpkg -i hailort-pcie-driver_4.22.0_all.deb 
 sudo reboot
 ```
 
-3. [Dockerfile](https://github.com/manjookim/Hailo8L/blob/main/Dockerfile) 작성 및 저장        
+2. [Dockerfile](https://github.com/manjookim/Hailo8L/blob/main/Dockerfile) 작성 및 저장        
 ```
 vi Dockerfile
 ```
 
-4. 도커 컨테이너 생성
+3. 도커 컨테이너 생성
 ```
 sudo docker build -t hailo_docker:test .
 #docker image:version
@@ -64,7 +60,7 @@ sudo docker run -it \
   --name hailo_test hailo_docker:test /bin/bash #docker name : hailo_test (사용자 임의 변경)
 ```
 
-5. 도커 컨테이너 진입
+4. 도커 컨테이너 진입
 ```
 docker start hailo_test
 docker exec -it hailo_test /bin/bash
