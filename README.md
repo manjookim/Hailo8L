@@ -33,6 +33,13 @@ raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 
 - Hailo SDK (DFC) 설치     
 hailo8_ai_sw_suite_2025-10.run 다운로드
 ```
+sudo apt update
+sudo apt install -y python3-tk graphviz libgraphviz-dev python3.10-dev build-essential cmake libusb-1.0-0-dev
+sudo apt install -y python3-pip
+python3 -m pip install virtualenv
+sudo apt install -y nodejs npm
+./hailo8_ai_sw_suite_2025-07.run
+
 ```
 
 
