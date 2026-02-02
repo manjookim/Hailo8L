@@ -30,6 +30,10 @@ raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 
 컴파일은 호스트에서, 추론은 rpi의 커스텀 도커 컨테이너에서 실행  
 
 드라이버의 버전은 모두 같아야 함   
+1. hailort 드라이버 설치
+```
+sudo dpkg -i hailort_4.22.0_arm64.deb
+```
   
 2. pcie 드라이버 설치
 ```
