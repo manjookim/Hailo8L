@@ -7,4 +7,5 @@
      
 [ 방법 2 ]   
 1. [degirum_evaluator.py](https://github.com/manjookim/Hailo8L/blob/main/accuracy/degirum/degirum_evaluator.py)    
-- degirum에서 제공하는 evaluator를 활용하여 한번에 정확도 측정 
+- degirum에서 제공하는 evaluator를 활용하여 한번에 정확도 측정
+- 모델의 json 파일이 필요 [yolov8s.json](https://github.com/manjookim/Hailo8L/blob/main/accuracy/degirum/yolov8s.json)
