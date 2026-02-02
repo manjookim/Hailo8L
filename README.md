@@ -33,7 +33,7 @@ raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 
 - Hailo SDK (DFC) 설치     
 hailo8_ai_sw_suite_2025-10.run 다운로드
 ```
-
+```
 
 
 ## Rpi 환경설정
