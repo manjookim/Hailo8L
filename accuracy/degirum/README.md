@@ -1,4 +1,10 @@
-### Degirum 을 이용한 정확도 측정
+## Degirum 을 이용한 정확도 측정
+
+###degirum 설치 
+
+```
+pip install degirum
+```
 
 [ 방법 1 ]
 1. [inference.py](https://github.com/manjookim/Hailo8L/blob/main/accuracy/degirum/inference.py) 로 predictions.json 생성     
