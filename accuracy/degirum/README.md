@@ -1,7 +1,7 @@
 ### Degirum 을 이용한 정확도 측정
 
 [ 방법 1 ]
-1. [inference.py](https://github.com/manjookim/Hailo8L/new/main/accuracy/degirum/inference.py) 로 predictions.json 생성     
+1. [inference.py](https://github.com/manjookim/Hailo8L/blob/main/accuracy/degirum/inference.py) 로 predictions.json 생성     
 2. [eval.py](https://github.com/manjookim/Hailo8L/new/main/accuracy/degirum/eval.py) 로 정확도 측정
 
 
