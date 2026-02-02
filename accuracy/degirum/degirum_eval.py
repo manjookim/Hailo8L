@@ -6,7 +6,7 @@ from degirum_tools.detection_eval import ObjectDetectionModelEvaluator
 model = dg.load_model(
     model_name="yolov8n-det--640x640_quant_hailort_multidevice_1",
     inference_host_address="@local",
-    zoo_url="/app/tappas/npu/accuracy_new/degirum/yolov8n-det--640x640_quant_hailort_multidevice_1",
+    zoo_url="/app/tappas/rpi2/npu/accuracy_new/degirum/yolov8n-det--640x640_quant_hailort_multidevice_1",
     token=''
 )
 
@@ -20,8 +20,8 @@ classmap = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 2
 evaluator = ObjectDetectionModelEvaluator(model, classmap=classmap)
 
 # Evaluation inputs
-image_dir = "/app/tappas/npu/accuracy/coco/images/val2017"
-coco_json = "/app/tappas/npu/accuracy/coco/annotations/instances_val2017.json"
+image_dir = "/app/tappas/rpi2/npu/accuracy/coco/images/val2017"
+coco_json = "/app/tappas/rpi2/npu/accuracy/coco/annotations/instances_val2017.json"
 
 
 # Evaluate and return mAP results
