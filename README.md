@@ -30,6 +30,9 @@ raspberry pi 의 OS는 debian 버전으로, hailo 에서 제공하는 툴들이 
 컴파일은 호스트에서, 추론은 rpi의 커스텀 도커 컨테이너에서 실행  
 
 ## PC 환경설정
+- Hailo SDK (DFC) 설치     
+hailo8_ai_sw_suite_2025-10.run 다운로드
+```
 
 
 
