@@ -39,7 +39,22 @@ sudo apt install -y python3-pip
 python3 -m pip install virtualenv
 sudo apt install -y nodejs npm
 ./hailo8_ai_sw_suite_2025-07.run
+```
 
+- hailo model zoo 설치
+```
+git clone https://github.com/hailo-ai/hailo_model_zoo
+```
+```
+cd hailo_model_zoo
+sudo apt install python3.10-venv
+python3 -m venv hailo_custom_venv
+source hailo_custom_venv/bin/activate
+```
+```
+pip install /path/to/hailo_dataflow_compiler-3.32.0-py3-none-linux_x86_64.whl
+pip install /path/to/hailort-4.22.0-cp310-cp310-linux_x86_64.whl
+pip install -e .
 ```
 
 
