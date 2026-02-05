@@ -7,12 +7,15 @@ pip install degirum
 ```
 
 Verify
-```degirum sys-info
+```
+degirum sys-info
 ```
 
-```apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0
 ```
-```pip install degirum-tools
+apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0
+```
+```
+pip install degirum-tools
 ```
 
 [ 방법 1 ]
