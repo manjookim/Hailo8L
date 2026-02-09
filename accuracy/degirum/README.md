@@ -17,6 +17,11 @@ apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0
 ```
 pip install degirum-tools
 ```
+### Token install
+- [degirum 공식 사이트](https://www.degirum.com/) 회원가입 및 token 발급
+```
+degirum token install <token>
+```
 
 [ 방법 1 ]
 1. [inference.py](https://github.com/manjookim/Hailo8L/blob/main/accuracy/degirum/inference.py) 로 predictions.json 생성     
