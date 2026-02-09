@@ -1,6 +1,6 @@
 import degirum as dg
 import degirum_tools
-from degirum_tools.detection_eval import ObjectDetectionModelEvaluator
+from degirum_tools.evaluator.detection_eval import ObjectDetectionModelEvaluator
 
 # Load the detection model
 model = dg.load_model(
