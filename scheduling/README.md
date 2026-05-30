@@ -1,5 +1,4 @@
-Scheduling 
-
+## HailoRT Scheduler  
 
 
 ### HRTT 파일 생성
