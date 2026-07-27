@@ -52,7 +52,7 @@ void softmax_1d(const float* input, float* output, int size) {
 }
 
 // ============================================================================
-// 2. 디코더 (DET, SEG, POSE) - 이전 로직 축약 통합
+// 2. 디코더 (DET, SEG, POSE) 
 // ============================================================================
 class YOLOv8DetDecoder {
 public:
@@ -83,7 +83,7 @@ public:
 };
 
 // ============================================================================
-// 3. Hailo Inference Engine (기존 PyBind11 클래스 대체)
+// 3. Hailo Inference Engine
 // ============================================================================
 class FastHailoInfer {
 private:
@@ -203,7 +203,7 @@ public:
 };
 
 // ============================================================================
-// 4. 자원 모니터링 스레드 (기존 python의 monitor_resource 대체)
+// 4. 자원 모니터링 스레드 
 // ============================================================================
 void get_sys(long long& total_cpu, long long& idle_cpu, float& mem_util) {
     ifstream meminfo("/proc/meminfo");
@@ -306,7 +306,7 @@ void run_model_thread(string hef_path, string combo_name, int trial) {
 }
 
 // ============================================================================
-// 6. 메인 함수 (기존 파이썬 __main__ 영역)
+// 6. 메인 함수 
 // ============================================================================
 int main() {
     string DET_PATH = "/app/tappas/rpi2/npu/yolov8s/yolov8s.hef";
