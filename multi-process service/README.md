@@ -2,6 +2,7 @@
 ```
 nano main.cpp
 ```
+- `main.cpp` : pre-proces, inference,  post-process (E2E)
 
 2. 컴파일
 ```
